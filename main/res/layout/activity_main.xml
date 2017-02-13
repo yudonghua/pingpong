@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    android:id="@+id/re">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="得分：0"
+        android:id="@+id/score"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/root" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最高分：0"
+        android:id="@+id/best"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/score"/>
+
+    <LinearLayout
+
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/button"
+        android:onClick="replay"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:background="@mipmap/replay" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="球拍随手指移动"
+        android:id="@+id/rule"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/best" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="得分：0"
+        android:id="@+id/score2"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/best2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="最高分：0"
+        android:visibility="invisible"
+        android:id="@+id/best2"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button" />
+
+
+
+</RelativeLayout>
+
